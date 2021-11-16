@@ -1,18 +1,44 @@
 :root {
-    --nav-height: 2rem;
+    font-size: 16px;
+    font-family: sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #2323e;
+    --bg-secondary: #141418;
+    --nav-width: 5rem;
 }
 
+/* Total body style */
 body {
+
     margin: 0;
     padding: 0;
-    /* margin-top: var(--nav-height); */
-    background-color: gray;
+
+    background-color: white;
+    color: black;
+
+    margin-left: var(--nav-width);
+}
+
+.empty-body {
+    margin-left: 5rem;
 }
 
 /* NAV BAR styling starts here */
 nav {
+
+    width: 5rem;
+    height: 100vh;
+
     position: fixed;
-    /* top: 0; */
+    left: 0;
+
+    background-color: var(--bg-primary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
@@ -21,18 +47,29 @@ ul {
     list-style-type: none;
 
     display: flex;
+    flex-direction: column;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 
-    position: sticky;
-    top: 0;
-    /* height: 2rem; */
 
-    background-color: white;
-    width: 100vw;
-    /* height: var(--nav-height); */
+    width: 50px;
+    height: 50px;
 
+    background-color: pink;
+    width: var(--nav-width);
+
+    margin: 0;
+    padding: 0;
+
+}
+
+li:last-child {
+    justify-content: flex-end;
+}
+
+ul:last-child {
+    /* justify-content: flex-end; */
 }
 
 a {
@@ -46,10 +83,4 @@ a:hover {
 
 a:visited {
     list-style: none;
-}
-
-
-.empty-body {
-    height: 300vh;
-    /* background-color: gray; */
 }
