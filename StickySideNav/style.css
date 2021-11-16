@@ -1,0 +1,55 @@
+:root {
+    --nav-height: 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* margin-top: var(--nav-height); */
+    background-color: gray;
+}
+
+/* NAV BAR styling starts here */
+nav {
+    position: fixed;
+    /* top: 0; */
+
+}
+
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    /* height: 2rem; */
+
+    background-color: white;
+    width: 100vw;
+    /* height: var(--nav-height); */
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    list-style: none;
+}
+
+
+.empty-body {
+    height: 300vh;
+    /* background-color: gray; */
+}
