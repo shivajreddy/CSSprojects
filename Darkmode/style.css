@@ -1,0 +1,50 @@
+* {
+    /* outline: 2px dotted red; */
+}
+
+
+/* ╔═════════════════════════════════╗ */
+/* ║         Root Dark Theme         ║ */
+
+/* ║                                 ║ */
+/* ╚═════════════════════════════════╝ */
+
+:root,
+:root.darkMode {
+    --color1: #C72C41;
+    --color2: #801336;
+    --color3: #2D132C;
+    --text1: #eaeaea;
+    --background1: rgb(0, 0, 0);
+    --font1: 'arial';
+}
+
+:root.lightMode {
+    --color1: #FFA69E;
+    --color2: #84DCC6;
+    --color3: #A5FFD6;
+    --text1: rgb(0, 0, 0);
+    --background1: rgb(255, 255, 255);
+    --font1: 'Alfa Slab One', cursieve;
+}
+
+.empty-body {
+    height: 200vh;
+}
+
+#main-nav {
+    background-color: var(--color3);
+}
+
+.nav-link {
+    color: var(--text1);
+}
+
+#body-text {
+    color: var(--text1);
+}
+
+body {
+    background-color: var(--background1);
+    font-family: var(--font1);
+}
